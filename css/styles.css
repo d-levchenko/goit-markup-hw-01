@@ -53,6 +53,9 @@ a:not(.logo-link):active {
 }
 
 .logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 36px;
 }
 
@@ -73,6 +76,7 @@ a:not(.logo-link):active {
 
 .nav-main {
   display: flex;
+  align-items: center;
 }
 
 .nav-ul {
@@ -84,14 +88,20 @@ a:not(.logo-link):active {
 
 .address-info {
   display: flex;
-  gap: 40px;
   margin-left: auto;
   align-items: center;
+  justify-content: center;
   font-style: normal;
 }
 
-.address-info > a {
+.address-info a {
+  display: flex;
   font-weight: normal;
+}
+
+.address-info ul {
+  display: flex;
+  gap: 40px;
 }
 
 /* hero section */
@@ -219,6 +229,7 @@ a:not(.logo-link):active {
 
 .footer-link {
   color: #f4f4fd;
+  display: inline-block;
 }
 
 .page-footer > p {
